@@ -1,0 +1,47 @@
+{
+  "name": "cardprophet_chrome",
+  "version": "1.0.0",
+  "private": false,
+  "description": "Chrome extension to scans credit card offer pages and save the active offers to Google Drive.",
+  "scripts": {
+    "lint": "eslint **/*.js",
+    "lint:fix": "npm run lint -- --fix",
+    "watch": "webpack --config webpack/webpack.dev.js --watch",
+    "build": "webpack --config webpack/webpack.prod.js",
+    "clean": "rimraf dist",
+    "test": "npx jest",
+    "prettier": "prettier --write \"src/**/*.{ts,tsx}\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/michael-cheung-nz2/cardprophet_chrome"
+  },
+  "keywords": [],
+  "author": "michael-cheung-nz2",
+  "license": "GPLV3",
+  "bugs": {
+    "url": "https://github.com/michael-cheung-nz2/cardprophet_chrome/issues"
+  },
+  "homepage": "https://github.com/michael-cheung-nz2/cardprophet_chrome",
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@types/chrome": "0.0.158",
+    "@types/jest": "^29.5.0",
+    "@types/react": "^18.0.29",
+    "@types/react-dom": "^18.0.11",
+    "copy-webpack-plugin": "^9.0.1",
+    "glob": "^7.1.6",
+    "jest": "^29.5.0",
+    "prettier": "^2.2.1",
+    "rimraf": "^3.0.2 ",
+    "ts-jest": "^29.1.0",
+    "ts-loader": "^8.0.0",
+    "typescript": "^5.0.4",
+    "webpack": "^5.94.0",
+    "webpack-cli": "^4.0.0",
+    "webpack-merge": "^5.0.0"
+  }
+}
